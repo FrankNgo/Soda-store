@@ -2,7 +2,6 @@ import { Component, OnInit, Input } from '@angular/core';
 import { Soda } from '../soda';
 import { ActivatedRoute } from '@angular/router';
 import { Location } from '@angular/common';
-
 import { SodaService }  from '../soda.service';
 
 
@@ -11,6 +10,7 @@ import { SodaService }  from '../soda.service';
   templateUrl: './soda-detail.component.html',
   styleUrls: ['./soda-detail.component.css']
 })
+
 export class SodaDetailComponent implements OnInit {
   @Input() soda: Soda;
 

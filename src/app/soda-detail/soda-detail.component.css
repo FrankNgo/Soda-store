@@ -9,7 +9,7 @@ label {
 input {
   height: 2em;
   font-size: 1em;
-  padding-left: .4em;
+  padding-left:3.7em;
 }
 button {
   margin-top: 20px;
@@ -27,4 +27,15 @@ button:disabled {
   background-color: #eee;
   color: #ccc;
   cursor: auto;
+}
+
+.well{
+  text-align: center;
+  margin-right: 150px;
+}
+#red{
+  margin-left:120px;
+}
+#blue{
+  margin-left:10px;
 }

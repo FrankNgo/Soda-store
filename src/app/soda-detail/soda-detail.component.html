@@ -1,11 +1,17 @@
+<div class="well">
 <div *ngIf="soda">
-  <h2>{{soda.name | uppercase}} Details</h2>
-  <div><span>id: </span>{{soda.id}}</div>
   <div>
     <label>name:
       <input [(ngModel)]="soda.name" placeholder="name">
     </label>
   </div>
-  <button (click)="goBack()">go back</button>
-  <button (click)="save()">save</button>
+  <label>quantity:
+    <input [(ngModel)]="soda.quantity" placeholder="">
+  </label><br>
+  <button id="red">Add +1</button>
+  <button id="blue">Minus -1</button>
+  <br>
+  <button id="red" (click)="goBack()">go back</button>
+  <button id="blue" (click)="save()">save</button>
+  </div>
 </div>
