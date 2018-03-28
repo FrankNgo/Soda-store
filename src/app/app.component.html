@@ -1,7 +1,9 @@
-<nav>
-  <a routerLink="/dashboard">Dashboard</a>
-  <a routerLink="/sodas">Sodas</a>
-</nav>
 <h1>{{ title }}</h1>
+<div style="text-align:center;">
+<nav>
+  <a id="wrapper" routerLink="/dashboard">Home</a>
+  <a id="wrapper" routerLink="/sodas">Add</a>
+</nav>
+</div>
 <router-outlet></router-outlet>
 <app-messages></app-messages>

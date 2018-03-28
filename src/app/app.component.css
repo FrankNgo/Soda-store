@@ -1,0 +1,19 @@
+a {
+  text-align: center;
+}
+
+h1{
+  text-align: center;
+}
+
+#wrapper, button {
+  width: 70px;
+  height: 20px;
+  border: 1px solid black;
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding-top: 10px;
+
+}
