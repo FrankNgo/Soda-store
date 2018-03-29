@@ -3,6 +3,7 @@ h1 {
   color: #369;
   font-family: 'Acme', sans-serif;
   font-size: 250%;
+  width: 100%;
 }
 h2, h3 {
   color: #444;
@@ -11,7 +12,7 @@ h2, h3 {
 }
 body {
   margin: 2em;
-  background-image: url("http://wallpaperlepi.com/wp-content/uploads/2015/05/Simple-Color-HD-1080p.jpg");
+  background-color: #c994c9;
   background-repeat: no-repeat;
   background-size: cover;
 }

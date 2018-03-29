@@ -14,6 +14,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
 import { InMemoryDataService }  from './in-memory-data.service';
 import { SodaSearchComponent } from './soda-search/soda-search.component';
+import { ImageUploadModule } from "angular2-image-upload";
 
 
 @NgModule({
@@ -30,9 +31,11 @@ import { SodaSearchComponent } from './soda-search/soda-search.component';
     FormsModule,
     AppRoutingModule,
     HttpClientModule,
+    ImageUploadModule.forRoot(),
     HttpClientInMemoryWebApiModule.forRoot(
       InMemoryDataService, { dataEncapsulation: false }
     )
+
   ],
   providers: [
     SodaService,

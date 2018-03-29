@@ -3,7 +3,10 @@
   <a *ngFor="let soda of sodas" class="col-1-4"
    routerLink="/detail/{{soda.id}}">
     <div class="module soda">
+      <img src="{{soda.background}}">
       <h4>{{soda.name}}</h4>
+      <h4>{{soda.quantity}} Cans Left</h4>
+
     </div>
   </a>
 </div>

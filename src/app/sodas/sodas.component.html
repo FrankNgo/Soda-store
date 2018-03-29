@@ -1,19 +1,30 @@
 
+<body background="bgimage.jpg">
 <div class="container">
 <h2>My Sodas</h2>
 <div>
   <label>Soda name:
     <input #sodaName />
   </label>
-  <!-- (click) passes input value to add() and then clears the input -->
-  <button (click)="add(sodaName.value); sodaName.value=''">
+  <label>Soda Quantity:
+    <input #sodaQuantity />
+  </label>
+  <label>Soda Image:
+    <input #sodaImage />
+  </label>
+
+  <button (click)="add(sodaName.value,sodaQuantity.value,sodaImage.value); sodaName.value='';sodaQuantity.value='';sodaImage.value=''">
     add
   </button>
+  <!-- <div class="floating">
+    <img src="https://www.duracell-me.com/app/themes/duracell/img/common/popout-top-bunny-mobile.png" alt="" id="backpack">
+  </div> -->
 </div>
+
 <ul class="sodas">
-  <li *ngFor="let soda of sodas">
+  <br><li *ngFor="let soda of sodas">
     <a routerLink="/detail/{{soda.id}}">
-      <span class="badge">{{soda.id}}</span>{{soda.name}}
+      <span class="badge"></span>{{soda.name}} {{soda.quantity}}
     </a>
     <button class="delete" title="delete soda"
     (click)="delete(soda)">x</button>

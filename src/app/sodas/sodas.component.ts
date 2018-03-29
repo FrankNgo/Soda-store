@@ -22,14 +22,15 @@ export class SodasComponent implements OnInit {
     .subscribe(sodas => this.sodas =sodas);
   }
 
-  add(name: string): void {
+  add(name: string,quantity: number,background: string): void {
   name = name.trim();
   if (!name) { return; }
-  this.sodaService.addSoda({ name } as Soda)
+  this.sodaService.addSoda({ name, quantity, background } as Soda)
     .subscribe(soda => {
       this.sodas.push(soda);
     });
   }
+
 
   delete(soda: Soda): void {
     this.sodas = this.sodas.filter(h => h !== soda);

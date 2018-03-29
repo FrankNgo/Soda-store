@@ -8,8 +8,11 @@
   <label>quantity:
     <input [(ngModel)]="soda.quantity" placeholder="">
   </label><br>
-  <button id="red">Add +1</button>
-  <button id="blue">Minus -1</button>
+  <label>Image:
+    <input [(ngModel)]="soda.background" placeholder="">
+  </label><br>
+  <!-- <button id="red">Add +1</button>
+  <button id="blue">Minus -1</button> -->
   <br>
   <button id="red" (click)="goBack()">go back</button>
   <button id="blue" (click)="save()">save</button>

@@ -1,9 +1,16 @@
+<div id="title-image"></div>
 <h1>{{ title }}</h1>
 <div style="text-align:center;">
-<nav>
+  <div class="topnav">
+  <a routerLink="/dashboard">Home</a>
+  <a routerLink="/sodas">Add</a>
+  <a href="#contact">Contact</a>
+  <a href="#about">About</a>
+</div>
+<!-- <nav>
   <a id="wrapper" routerLink="/dashboard">Home</a>
-  <a id="wrapper" routerLink="/sodas">Add</a>
-</nav>
+  <a id="wrapper" routerLink="/sodas">Add</a><br>
+</nav> -->
 </div>
 <router-outlet></router-outlet>
 <app-messages></app-messages>
